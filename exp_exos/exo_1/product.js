@@ -15,19 +15,19 @@ app.get("/product/:id", (req, res) => {
   
   if (productId === "123") {
     return res.status(200).json({
+      message: "Product found successfully!",
       productId: "123",
       name: "Product 123",
       price: 19.99,
       inStock: true,
-      message: "Product found successfully!",
     });
   } else {
     return res.status(404).json({
       error: "Product not found",
+      message: "Please check the product ID and try again.",
       productId: productId,
       price: null,
       inStock: false,
-      message: "Please check the product ID and try again.",
     });
   }
 });

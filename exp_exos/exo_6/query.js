@@ -9,7 +9,7 @@ app.get("/greet", (req, res) => {
   if (req.query.name === "Sarah") {
     res.status(200).send(`Hello, ${req.query.name}!`);
   } else {
-    res.status(400).send(`Hello, Stranger}!`);
+    res.status(400).send(`Hello, Stranger!`);
   }
 });
 

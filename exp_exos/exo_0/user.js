@@ -5,10 +5,10 @@ app.get("/", (req, res) => {
   res.send(
     ` <html>
         <head>
-          <title>User Page</title>
+          <title>User Page 1</title>
         </head>
         <body>
-          <h3>Welcome to the User Page!</h3>
+          <h3>Welcome to the User Page 2!</h3>
         </body>
       </html>
     `
